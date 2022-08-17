@@ -1,0 +1,14 @@
+<h1>New Restaurant</h1>
+
+<%# Génère : <form action="/restaurants" method="post"> %>
+
+<!-- app/views/restaurants/_form.html.erb -->
+<%= simple_form_for(@restaurant) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.input :phone_number %>
+  <%= f.input :category %>
+  <%= f.submit %>
+<% end %>
+
+<%#= render "form", restaurant: @restaurant %>
